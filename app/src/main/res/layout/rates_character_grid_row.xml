@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/charThumbnail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@color/black" />
+
+            <!--android:background="@color/black"-->
+
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/charThumbnail"
+                android:layout_centerHorizontal="true"
+                android:background="#80000000">
+
+                <TextView
+                    android:id="@+id/charName"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/charThumbnailList"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@color/black"/>
+
+            <RatingBar
+                android:id="@+id/rarityBar"
+                style="@style/rarityBarIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-13dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isIndicator="true"
+                android:numStars="3"
+                android:scaleX=".5"
+                android:scaleY=".5" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/charNameList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="15dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Name"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
